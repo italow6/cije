@@ -186,11 +186,40 @@ nav {
     width: 100%;
     height: 7%;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     top: -15px;
 }
 
+.flexbox_cije {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.list_flexbar1 {
+    display: flex;
+}
+
+.list_flexbar2 {
+    display: flex;
+}
+
+.elements_listbar {
+    display: flex;
+    align-items: center;
+}
+
+.link_bar {
+    margin-left: 15px ;
+    font-family: Ubuntu;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .imagem_bar {
-    width: 20%;
+    width: 10%;
 }
 
 .footer_cije {
