@@ -91,6 +91,14 @@
                     </div>
                 </div>
             </div>
+            
+            <a id = "buttonBackTop" href="#"><img src="/images/seta.png" id = "seta"></a>
+            <script type = "text/javascript">
+                window.addEventListener("scroll", function(){
+                    let buttonBackTop = document.getElementById("buttonBackTop");
+                    buttonBackTop.classList.toggle("buttonBackTopATT", window.scrollY > 300);
+                })
+            </script>
         </main>
     </body>
 </html>
