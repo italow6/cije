@@ -313,6 +313,7 @@ h2 {
 .imagem_bar2 {
     width: 60%;
 }
+
 .footer_cije {
      width: 100vw;
      display: flex;
@@ -422,6 +423,12 @@ h2 {
     .conteudo-bloco-5 {
         height: 100px;
     }
+
+    .list_flexbar {
+        width: 20%;
+    }
+    
+    
 
     .img_logo_footer {
         width: 45%;
