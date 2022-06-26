@@ -404,4 +404,8 @@ h2 {
     .img_patrocinador {
         width: 100%;
     }
+
+    .img_logo_footer {
+        width: 45%;
+    }
 }
