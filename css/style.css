@@ -5,6 +5,7 @@
 
 body {
     overflow-x: hidden;
+    background-image: url(/images/background-body.jpg);
 }
 
 ::-webkit-scrollbar{
@@ -26,10 +27,19 @@ nav {
     font-size: 20px;
     font-family: Ubuntu;
     font-weight: bolder;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 100;
     /* position: fixed; */
+}
+
+nav.sticky {
+    box-shadow: 0px 5px 9px 0px rgba(50, 50, 50, 0.5);
+    height: 10vh;
+    opacity: 0.9;
+    transition: 0.3s;
 }
 
 #buttonBackTop {
@@ -73,113 +83,125 @@ nav {
     width: 26%;
 }
 
+h2 {
+    font-family: Ubuntu;
+}
+
 .container {
+    padding-top: 80px;
     width: 100vw;
     height: 100vh;
-    display: inline-block;
     align-items: center;
     justify-content: center;
 }
 
-.fundo_geral {
-    width: 100%;
+.bloco-1 {
+    width: 100vw;
 }
 
-.fundo_branco {
-    width: 100%;
-}
-
-.cont_0 {
-    position: absolute;
-    width: 100%;
-    height: 60%;
+.conteudo-bloco-1 {
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    top:45%;
 }
 
-/* .video {
-    
-} */
+.bg-video {
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
 
-.cont_1 {
+.bloco-2 {
+    width: 100vw;
+    background: none;
+    position: relative;
+    top: -20%;
+}
+
+.conteudo-bloco-2 {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
     background: #23B8BA;
-    width: 90vw;
-    height: 500px;
-    position:absolute;
-    top: 950px;
-    left: 60px;
-    border-radius: 0px 90px 0px 90px;  
-    box-shadow: 0px 25px 60px 20px rgba(0,0,0,0.85);
-    display: flex;
+    border-radius: 0px 40px 0px 40px;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.8);
     align-items: center;
-    justify-content: space-around;
-
-}
-.bloco_1 {
-    background: #ffffff;
-    width: 400px;
-    height: 300px;
-    border-radius: 30px;
-    box-shadow: 0px 25px 60px 20px rgba(0,0,0,0.45);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.modalidade {
-    background-color: #000000;
+    justify-content: center;
     color: #ffffff;
-    font-family: Ubuntu;
-    font-size: 22px;
-    position: absolute;
-    top: -40px;
-    width: 350px;
-    height: 80px;
+}
+
+.box {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+#modalidades {
+    font-size: 20px;
+    background: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
     border-radius: 0px 20px 0px 20px;
+    text-align: center;
+    position: relative;
+    top: -25px;
 }
 
-.logo_lol {
-    width: 80%;
-}
-
-.logo_freefire {
-    width: 80%;
-}
-
-.akali {
-    position: absolute;
-    width: 35%;
-    left: -90px;
-    top: 100px;
-}
-
-.macaco {
-    position: absolute;
-    width: 25%;
-    right: -80px;
-    top: 120px;
-    transform: rotate(20deg);
-}
-
-.cont_2 {
-    width: 1230px;
-    height: 400px;
-    position: absolute;
-    top: 1600px;
-    left: 60px;
+.box-logo {
+    width: 400px;
+    height: 280px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: #ffffff;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+#logo-box-conteudo{
+    width: 90%;
+}
+
+.bloco-3 {
+    background-image: url(/images/fundo_branco_lol.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-bloco-3 {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+#cidades {
+    font-size: 20px;
+    background: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 0px 20px 0px 20px;
 }
 
 .list {
     list-style: none;
-    padding: 50px;
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
@@ -187,6 +209,7 @@ nav {
 
 .elements_list {
     background: #ffffff;
+    color: #000000;
     width: 400px;
     height: 60px;
     margin: 20px;
@@ -198,35 +221,33 @@ nav {
     box-shadow: 0px 20px 18px 2px rgba(0,0,0,0.55);
 }
 
-.cidades {
-    background-color: #000000;
-    color: #ffffff;
-    font-family: Ubuntu;
-    font-size: 22px;
-    position: absolute;
-    top: -40px;
-    width: 470px;
-    height: 80px;
+.bloco-4 {
+    width: 100vw; 
+    background:#1F1E1E;
     display: flex;
+    padding-top: 30px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.conteudo-bloco-4 {
+    color: #ffffff;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#patrocinadores {
+    font-size: 20px;
+    background: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
     border-radius: 0px 20px 0px 20px;
 }
-
-.cont_3 {
-    background:#1F1E1E;
-    width: 100%;
-    height: 500px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    color: #ffffff;
-    font-family: Ubuntu;
-    top: -15px;
-}
-
 .list_patrocinadores {
     width: 60%;
     height: 80%;
@@ -235,7 +256,6 @@ nav {
     justify-content: space-around;
     flex-flow: row wrap;
     list-style: none;
-    margin-top: -35px;
 }
 
 .elements_list_patrocinadores {
@@ -246,35 +266,26 @@ nav {
     width: 100%;
 }
 
-.text_patrocinadores {
-    margin-top: -35px;
-    font-size: 33px;
-    letter-spacing: 2px;
-}
-
-.cont_4 {
-    background: #23B8BA;
-    width: 100%;
-    height: 7%;
-    position: relative;
+.bloco-5 {
+    width: 100vw;
+    background:#23B8BA;
     display: flex;
     align-items: center;
+}
+
+.conteudo-bloco-5 {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     justify-content: space-around;
-    top: -15px;
 }
 
-/* .flexbox_cije {
-    
-} */
-
-.list_flexbar1 {
+.list_flexbar {
     display: flex;
-    width: 100px;
-}
-
-.list_flexbar2 {
-    display: flex;
-    width: 200px;
+    width: 10%;
 }
 
 .elements_listbar1 {
@@ -286,7 +297,6 @@ nav {
 
 .elements_listbar2 {
     list-style: none;
-    margin: 20px;
 }
 
 .link_bar {
@@ -297,25 +307,23 @@ nav {
 }
 
 .imagem_bar1 {
-    width: 18%;
+    width: 15%;
 }
-
 .imagem_bar2 {
-    width: 100%;
+    width: 60%;
 }
-
 .footer_cije {
-    background: #ffffff;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
+     width: 100vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: #000000;
 }
-
 .logo_footer {
     width: 50%;
     height: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -323,130 +331,4 @@ nav {
 
 .img_logo_footer {
     width: 25%;
-}
-
-@media (max-width: 1000px) {
-    
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    
-    body {
-        overflow-x: hidden;
-    }
-    
-    nav {
-        width: 100%;
-        height: 12vh;
-        background: #000000;
-        font-size: 28px;
-        font-family: Ubuntu;
-        font-weight: bolder;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        /* position: fixed; */
-    }
-
-    .logo_header {
-        position: relative;
-        top: 0px;
-        width: 26%;
-        margin: 10px;
-    }
-
-    .cont_0 {
-        position: absolute;
-        width: 100%;
-        height: 30%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        top:15%;
-    }
-
-    iframe {
-        width: 220px;
-        height: 150px;
-    }
-
-    .cont_1 {
-        background: #23B8BA;
-        width: 90vw;
-        height: 1350px;
-        position:absolute;
-        display: flex;
-        flex-flow: row wrap;
-        top: 350px;
-        left: 45px;
-        border-radius: 0px 40px 0px 40px;  
-        box-shadow: 0px 25px 60px 20px rgba(0,0,0,0.85);
-        align-items: center;
-        justify-content: space-around;
-    
-    }
-
-    .bloco_1 {
-        background: #ffffff;
-        width: 700px;
-        height: 600px;
-        border-radius: 40px;
-        box-shadow: 0px 15px 30px 10px rgba(0,0,0,0.45);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .modalidade {
-        background-color: #000000;
-        color: #ffffff;
-        font-family: Ubuntu;
-        font-size: 28px;
-        position: absolute;
-        top: -65px;
-        width: 400px;
-        height: 90px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-radius: 0px 20px 0px 20px;
-    }
-    
-    .logo_lol {
-        width: 80%;
-    }
-    
-    .logo_freefire {
-        width: 80%;
-    }
-    
-    .akali {
-        position: absolute;
-        width: 35%;
-        left: -20px;
-        top: 10px;
-    }
-    
-    .macaco {
-        position: absolute;
-        width: 25%;
-        right: -10px;
-        top: 1060px;
-        transform: rotate(20deg);
-    }
-
-    .cont_3 {
-        background:#1F1E1E;
-        width: 100%;
-        height: 500px;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        text-align: center;
-        color: #ffffff;
-        font-family: Ubuntu;
-        top: 400px;
-    }
 }
