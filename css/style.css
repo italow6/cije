@@ -377,7 +377,8 @@ h2 {
     }
     
     .elements_list {
-        font-size: 60px;
-        
+        font-size: 50px;
+        width: 700px;
+        height: 100px;
     }
 }
