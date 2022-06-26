@@ -362,20 +362,22 @@ h2 {
 
     #modalidades {
         font-size: 40px;
+        position: relative;
+        top: -30px;
     }
 
     .box-logo {
         width: 700px;
         height: 680px;
-        /* display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        margin-left: 50px;
-        margin-right: 50px;
-        background: #ffffff;
-        box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.8); */
         border-radius: 30px;
+    }
+
+    #cidades {
+        font-size: 40px;
+    }
+    
+    .elements_list {
+        font-size: 60px;
+        
     }
 }
