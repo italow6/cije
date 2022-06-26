@@ -301,7 +301,7 @@ h2 {
 }
 
 .link_bar {
-    margin-left: 15px ;
+    margin-left: 15px;
     font-family: Ubuntu;
     color: #ffffff;
     text-decoration: none;
@@ -431,6 +431,10 @@ h2 {
 
     .list_flexbar {
         width: 20%;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-right: 300px;
+        margin-left: 300px;
     }
 
     .imagem_bar1 {
