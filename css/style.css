@@ -372,6 +372,10 @@ h2 {
         border-radius: 30px;
     }
 
+    .bloco-3 {
+        height: auto;
+    }
+
     #cidades {
         font-size: 40px;
     }
