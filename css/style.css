@@ -357,6 +357,20 @@ h2 {
         margin-right: 10px;
     }
 
+    #seta {
+        width: 60px;
+        height: 60px;
+    }
+    
+    #buttonBackTop.buttonBackTopATT {
+        bottom: 100px;
+        right: 100px;
+        width: 100px;
+        height: 100px;
+        background: #23b8ba;
+        opacity: 0.8;
+    }
+
     .bloco-2 {
         top: -5%;
     }
@@ -364,7 +378,6 @@ h2 {
     #modalidades {
         font-size: 40px;
         position: relative;
-        margin-bottom: 20px;
         top: -30px;
     }
 
@@ -381,6 +394,7 @@ h2 {
 
     #cidades {
         font-size: 40px;
+        margin-bottom: 20px;
     }
     
     .elements_list {
