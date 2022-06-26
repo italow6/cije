@@ -425,6 +425,11 @@ h2 {
     }
 
     .list_flexbar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .list_flexbar {
         width: 20%;
     }
 
