@@ -427,8 +427,15 @@ h2 {
     .list_flexbar {
         width: 20%;
     }
+
+    .imagem_bar1 {
+        width: 30%;
+    }
     
-    
+    .link_bar {
+        margin-left: 15px ;
+        margin-right: 20px;
+    }
 
     .img_logo_footer {
         width: 45%;
