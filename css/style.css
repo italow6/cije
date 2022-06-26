@@ -347,7 +347,10 @@ h2 {
         align-items: center;
         justify-content: space-around;
         z-index: 100;
-        /* position: fixed; */
+    }
+
+    .logo_header {
+        width: 26%;
     }
 
 }
